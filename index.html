@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+
+           body{
+               height: 100vh;
+               animation: changeBg 4s ease-in-out infinite;
+           }
+           @keyframes changeBg {
+                0%{
+                    background:linear-gradient(45deg,rgba(0,0,0,0.4),rgba(221, 130, 25, 0.8));
+                }
+                25%{
+                    background:linear-gradient(90deg,rgba(0,0,0,0.4),rgba(153, 22, 22,0.7));
+                }
+           
+                50%{
+                    background:linear-gradient(180deg,rgba(0,0,0,0.4),rgba(21, 140, 184, 0.8));
+                }
+                75%{
+                    background:linear-gradient(225deg,rgba(0,0,0,0.4),rgba(122, 21, 161, 0.8));
+                }
+                100%{
+                    background: linear-gradient(370deg,rgba(0,0,0,0.4),rgba(31, 129, 6, 0.8));
+                }
+           }
+
+            .mario{
+                 width: calc(2044px / 5);
+                 height: 712px;
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%,-50%);
+                 background-image: url('./LuiGiDanceSprite.png');
+                 animation: danceMario .4s steps(5) forwards infinite;
+            }
+
+            @keyframes danceMario{
+                 0%{
+                     background-position: 0px;
+                 }
+                 100%{
+                     background-position: 2044px;
+                 }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </style>
+
+
+
+</head>
+<body>
+    <!-- 3140/712 -->
+<div class="mario"></div>                
+<div class="luigi"></div>
+     <!-- 2044/712 -->
+
+
+
+
+
+
+
+    
+</body>
+</html>
